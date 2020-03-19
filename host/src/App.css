@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro&display=swap');
+html { 
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: bold;
+  background:#000;
+}

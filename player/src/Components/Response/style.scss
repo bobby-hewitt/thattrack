@@ -1,0 +1,21 @@
+.responseContainer{
+	width:100vw;
+	box-sizing: border-box;
+	padding:0 30px;
+	background:#fff;
+	margin:10px;
+	min-height:10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.responseInnerContainer{
+		// width:100%;
+		*{
+		margin:0;
+		font-weight: bold;
+		color:#101010;
+
+	}
+	}
+	
+}

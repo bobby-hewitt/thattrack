@@ -1,0 +1,5 @@
+export { default as Home } from './Home'
+export { default as Tracks } from './Tracks'
+export { default as Room } from './Room'
+export { default as Instructions } from './Instructions'
+export { default as NotFound } from './NotFound'

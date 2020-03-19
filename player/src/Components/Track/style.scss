@@ -1,0 +1,99 @@
+.TrackContainer{
+	width:100vw;
+	height:100vh;
+	position: relative;
+	.trackImage{
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-position: center;
+		position:absolute;
+		right:50%;
+		top:0px;
+		bottom:0px;
+		width:1000px;
+		transform:translate(50%, 0) scale(0.75);
+		filter:blur(150px);
+		transition:all 1s ease;
+		.grad{
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index: 100;
+			background: rgba(0,0,0,0.6)
+		}
+	}
+	
+	.trackMeta{
+		position:absolute;
+		top:50%;
+		left:50px;
+		*{
+			overflow: hidden;
+		}
+		justify-content: center;
+		transform:translateY(-50%);
+		flex-direction: column;
+		.title{
+			font-weight: bold;
+			font-size:100px;
+			color:white;
+			margin:0;
+			transform:translateY(-50px);
+			opacity: 0;
+			margin-bottom:-20px;
+		}
+		.artist{
+			font-size:60px;
+			color:#b2b2b2;
+			margin:0;
+			margin-top:-20px;
+			transform:translateY(50px);
+			opacity: 0;
+		}
+	}
+	.possibleResponses{
+		display: flex;
+		flex-direction: row;
+		.spacer{
+			margin:0 30px;
+			background:red;
+			height:5px;
+		}
+		&.isHidden{
+			opacity: 0;
+		}
+	}
+	.artistResponses{
+		position:absolute;
+		top:0;
+		left:0;
+		
+	}
+	.nameResponses{
+		position:absolute;
+		left:0;
+		bottom:0;
+	}
+	&.isRevealed{
+		.trackImage{
+			background-position: right;
+			right:0px;
+			transform:translate(0) scale(1);
+			filter:blur(0px);
+		}	
+		.title{
+			transition:all 0.6s ease 1.2s;
+			line-height:120px;
+			opacity: 1;
+			transform:translateY(0);
+		}
+		.artist{
+			transform:translateY(0);
+			opacity: 1;
+			transition:all 0.6s ease 1.2s;
+			line-height: 120px;
+		}
+	}
+}

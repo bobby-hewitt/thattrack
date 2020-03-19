@@ -1,0 +1,68 @@
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+ 
+ 
+
+
+ .vinyl {
+   position: absolute;
+   top: 50%;
+   
+   width: 0px;
+   height: 0px;
+   border-radius: 50%;
+   
+   border-width: 14px 0px;
+   border-left: 0;
+   animation:spin 1.3s linear infinite;
+   transform:scale(0);
+   box-shadow:none;
+   border:none;
+   transition:all 0.3s ease 0.3s;
+   
+   box-shadow:none;
+ }
+
+  .vinyl-wrapper {
+   position: fixed;
+   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   background:transparent;
+   z-index: 100000000000;
+   transition:all 0.6s ease 0.45s;
+   &.loading{       
+      background:#000;
+      .vinyl {
+         top: 50%;
+         width: 28px;
+   height: 30px;
+         background: #f7aac7;
+         border: solid #e7568d;
+         box-shadow: 0px 0px 3px #f7aac7, 0px 0px 0px 10px #ea6a9b, 0px 0px 15px #f7aac7, 0px 0px 0px 16px #000, 0px 0px 0px 17px #252424, 0px 0px 0px 18px #000, 0px 0px 0px 19px #313030, 0px 0px 0px 20px #000, 0px 0px 0px 21px #3a3838, 0px 0px 0px 22px #000, 0px 0px 0px 23px #2b2a2a, 0px 0px 0px 24px #000, 0px 0px 0px 25px #313030, 0px 0px 0px 26px #000, 0px 0px 0px 27px #313030, 0px 0px 0px 28px #000, 0px 0px 0px 29px #333333, 0px 0px 0px 30px #000, 0px 0px 0px 31px #333232, 0px 0px 0px 32px #000, 0px 0px 0px 33px #4c4a4a, 0px 0px 0px 34px #000, 0px 0px 0px 35px #2f2e2e, 0px 0px 0px 36px #000, 0px 0px 0px 37px #252424, 0px 0px 0px 38px #000, 0px 0px 0px 39px #2f2e2e, 0px 0px 0px 40px #000, 0px 0px 0px 41px #2f2e2e, 0px 0px 0px 42px #000, 0px 0px 0px 55px #2f2e2e, 0px 0px 0px 56px #000, 0px 0px 0px 57px #2f2e2e, 0px 0px 0px 58px #cecece, 0px 0px 0px 59px #2f2e2e;
+           transform:scale(1);
+            
+
+      }
+   }
+   // transform: rotateX(10deg) rotateZ(-20deg);
+ }
+ 
+ 
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+    
+   }
+   100% {
+     transform: rotate(360deg);
+    
+   }
+ }

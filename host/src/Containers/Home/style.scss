@@ -1,0 +1,31 @@
+.playlistsContainer{
+	.playlistsInnerContainer{
+		width:100vw;
+		// height:100vh;
+		// padding-bottom:200px!important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-top:90px;
+		
+	}
+	.playlistSearchContainer{
+			z-index: 1;
+			padding: 25px;
+			width:100%;
+			// position: fixed;
+			top:0;
+			left:0;
+			display: flex;
+			align-items:flex-start;
+			justify-content: center;
+			position:fixed;
+			top:0;
+			left:0;
+			background:#101010;
+			// height:400px;
+			// background:linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+			
+		}
+}

@@ -1,0 +1,27 @@
+.PlaylistContainer{
+	width:50%;
+	padding:0;
+	
+	padding-top:50%;
+	display: inline-block;
+	background-size:cover;
+	background-position:center;
+	margin:0;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .PlaylistContainer{
+	width:25%;
+	padding:0;
+	
+	padding-top:25%;
+	display: inline-block;
+	background-size:cover;
+	background-position:center;
+	margin:0;
+}
+
+
+}
